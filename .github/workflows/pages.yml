@@ -3,9 +3,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'index.html'
-      - 'studio.html'
-      - 'huong-dan-ho-so.html'
+      - '*.html'
+      - '**/*.html'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
