@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#091326">
+<meta name="description" content="Hướng dẫn chuẩn bị hồ sơ KEN XNX CAD Studio, quy trình dự kiến và giới hạn hiện tại.">
+<title>Hướng dẫn hồ sơ | KEN XNX Project Hub</title>
+<style>
+:root{--bg:#091326;--panel:#11213b;--line:#263b5a;--text:#f0f5ff;--muted:#9aadc9;--cyan:#65dbe9;--green:#68e3b4;--amber:#ffcc7a;--red:#ff9a9a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 85% 0,#1c3156 0,transparent 33%),var(--bg);color:var(--text);font:15px/1.75 system-ui,-apple-system,"Segoe UI",sans-serif}.wrap{width:min(940px,calc(100% - 32px));margin:auto}a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}.top{padding:22px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:center}.brand{color:var(--text);font-weight:850;letter-spacing:.04em}.brand span{color:var(--cyan)}.hero{padding:43px 0 20px}.k{color:var(--cyan);font-size:11px;letter-spacing:.2em;font-weight:800;text-transform:uppercase}h1{font-size:clamp(31px,5vw,47px);line-height:1.13;letter-spacing:-.045em;margin:12px 0 16px}.lead{font-size:16px;color:#b0c0d8;max-width:800px}.alert{border:1px solid #78572d;background:#ffcc7a10;padding:19px 20px;border-radius:15px;margin:20px 0 30px}.alert strong{color:var(--amber);display:block;margin-bottom:5px}.alert p{margin:0;color:#dbc9aa;font-size:14px}.danger{border-color:#693e4b;background:#ff9a9a0d}.danger strong{color:var(--red)}.danger p{color:#e7c5cb}.section{margin:31px 0}.section h2{font-size:22px;letter-spacing:-.025em;margin:0 0 13px}.section p,.section li{color:#b2c1d8}.steps{display:grid;gap:12px}.step{display:grid;grid-template-columns:42px 1fr;gap:14px;border:1px solid var(--line);background:#ffffff04;padding:17px;border-radius:14px}.num{height:34px;width:34px;border-radius:10px;background:#65dbe915;border:1px solid #65dbe944;display:grid;place-items:center;color:var(--cyan);font-weight:850}.step h3{margin:0 0 5px;font-size:15px}.step p{font-size:13px;margin:0}.table{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:13px}.table th,.table td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}.table th{background:#142642;color:var(--cyan)}.table td{color:#b4c4db}.table tr:last-child td{border-bottom:0}.label{display:inline-block;border:1px solid #65dbe944;color:var(--cyan);font-size:11px;padding:3px 8px;border-radius:999px}.todo{border:1px solid #315d57;background:#68e3b40c;padding:18px;border-radius:14px}.todo h2{margin-top:0}.todo li{margin:6px 0}.buttons{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0 45px}.btn{display:inline-block;padding:11px 15px;border-radius:10px;border:1px solid var(--line);font-weight:750;font-size:13px}.btn.main{color:#06161d;background:var(--green);border-color:var(--green)}footer{border-top:1px solid var(--line);padding:22px 0 32px;color:#7e94b3;font-size:12px}
+@media(max-width:560px){.table{font-size:11px}.table th,.table td{padding:9px 7px}.step{padding:13px}.top{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body><div class="wrap">
+<header class="top"><a class="brand" href="./">KEN <span>XNX</span> · PROJECT HUB</a><a href="./">← Về trang chủ</a></header>
+<main>
+<section class="hero"><div class="k">USER GUIDE · DOCUMENT INTAKE</div>
+<h1>Hướng dẫn chuẩn bị và upload hồ sơ</h1>
+<p class="lead">Quy trình tham khảo cho bộ hồ sơ máy móc/dây chuyền nhập khẩu: chuẩn bị chứng từ, giữ nguyên nguồn gốc, liên kết chứng cứ theo thiết bị và rà soát trước khi tạo đầu ra Hải quan.</p>
+<div class="alert"><strong>Trạng thái tính năng hiện tại</strong><p>Website đang được triển khai là <b>trang danh mục dự án và trang hướng dẫn tĩnh</b>. Chức năng upload, đọc/trích xuất nội dung từ PDF/Excel, lưu trữ hồ sơ và chạy phân tích tự động <b>chưa được tích hợp vào website công khai</b>. Các bước upload và xử lý ở dưới là quy trình dự kiến cho các mô-đun V0.3–V0.4, không phải chức năng đã chạy.</p></div>
+<div class="alert danger"><strong>Quan trọng — không tải chứng từ Hải quan lên repository công khai</strong><p>Repository hiện là Public. Không commit, upload hoặc đặt vào GitHub các Invoice, Packing List, hợp đồng, vận đơn, C/O, catalogue nội bộ, ảnh nhãn máy, thông tin khách hàng, mã số thuế, giá mua, thông tin liên hệ, thông tin bí mật hoặc bất kỳ tài liệu lô hàng thật nào. Xóa file sau khi đã commit không đảm bảo lịch sử Git không còn bản sao. Chỉ dùng dữ liệu giả đã ẩn danh khi thử nghiệm công khai.</p></div>
+</section>
+<section class="section"><h2>1. Chuẩn bị thư mục hồ sơ</h2><p>Tạo một thư mục riêng cho từng lô hàng/dự án, giữ nguyên file gốc và tách theo nhóm như sau:</p>
+<table class="table"><thead><tr><th>Thư mục gợi ý</th><th>Tài liệu</th><th>Mục đích</th></tr></thead><tbody>
+<tr><td><b>01_Catalogue</b></td><td>Catalogue, datasheet, manual, specification.</td><td>Nhận dạng, model, cấu tạo, chức năng, nguyên lý và thông số.</td></tr>
+<tr><td><b>02_Invoice_PKL</b></td><td>Invoice, Packing List, hợp đồng nếu có.</td><td>Đối chiếu tên hàng, số lượng, quy cách, kiện hàng và dữ liệu thương mại.</td></tr>
+<tr><td><b>03_Drawing_Layout</b></td><td>Drawing, layout, flow chart, bản vẽ lắp.</td><td>Xác định vị trí và mối liên hệ thiết bị trong dây chuyền.</td></tr>
+<tr><td><b>04_Photos_Video</b></td><td>Ảnh toàn máy, bảng tên, nhãn model, cụm chi tiết và video nếu cần.</td><td>Đối chiếu nhận dạng và cấu tạo thực tế.</td></tr>
+<tr><td><b>05_Other_Evidence</b></td><td>CO, vận đơn, tài liệu chuyên ngành hoặc tài liệu bổ sung có liên quan.</td><td>Chỉ sử dụng cho mục đích phù hợp, theo phạm vi cần kiểm tra.</td></tr>
+</tbody></table>
+<p>Đặt tên file dễ tìm, ví dụ <code>Catalogue_MainMachine_ModelABC.pdf</code>, <code>Invoice_2026-10.pdf</code>, <code>Layout_Line01.pdf</code>. Không sửa chứng từ gốc để ép các nguồn trùng khớp. Nếu có bản dịch, lưu song song với file gốc và ghi rõ ngôn ngữ.</p></section>
+<section class="section"><h2>2. Quy trình sử dụng dự kiến khi chức năng hồ sơ được triển khai</h2><div class="steps">
+<div class="step"><div class="num">01</div><div><h3>Tạo một hồ sơ riêng cho từng lô hàng</h3><p>Đặt mã hồ sơ dễ truy vết, ghi khách hàng/dự án ở nơi lưu trữ nội bộ an toàn và tránh trộn chứng từ của nhiều lô hàng.</p></div></div>
+<div class="step"><div class="num">02</div><div><h3>Chọn tệp trong mô-đun Upload</h3><p>Chỉ thực hiện trong ứng dụng có chức năng upload thực sự và có chính sách lưu trữ/phân quyền phù hợp. Chọn Catalogue, Invoice, Packing List, bản vẽ và ảnh; kiểm tra tên file, dung lượng, số trang và tệp đọc được trước khi gửi.</p></div></div>
+<div class="step"><div class="num">03</div><div><h3>Liên kết tài liệu với đúng thiết bị</h3><p>Với mỗi máy/cụm máy, ghi tên hàng, model, số thứ tự trong layout và tài liệu chứng minh. Nếu một tài liệu áp dụng cho nhiều thiết bị, ghi rõ phạm vi; không tự gán thông số khi hồ sơ chưa thể hiện.</p></div></div>
+<div class="step"><div class="num">04</div><div><h3>Đối chiếu nguồn và khóa mâu thuẫn</h3><p>So sánh model, công suất, điện áp, chức năng, số lượng, nhà sản xuất và năm sản xuất giữa các tài liệu. Ghi rõ nguồn nào hỗ trợ từng dữ kiện; mục thiếu hoặc xung đột phải được gắn trạng thái chờ bổ sung.</p></div></div>
+<div class="step"><div class="num">05</div><div><h3>Chạy phân tích ở trạng thái nháp</h3><p>Đầu ra dự kiến gồm Master Data, danh sách chứng cứ, vấn đề cần làm rõ, phân tích HS tham khảo, rủi ro và dự thảo Mẫu 01. Không coi tự động hóa là căn cứ pháp lý độc lập; phải kiểm tra văn bản đang có hiệu lực và hồ sơ nguồn.</p></div></div>
+<div class="step"><div class="num">06</div><div><h3>Rà soát rồi mới xuất hồ sơ</h3><p><span class="label">DRAFT</span> nghĩa là bản nháp cần rà soát. <span class="label">READY WITH CONDITIONS</span> nghĩa là chỉ có thể hoàn tất sau khi đáp ứng các điều kiện đã liệt kê. Không tự chuyển thành FINAL khi chưa có người chịu trách nhiệm duyệt.</p></div></div>
+</div></section>
+<section class="section"><h2>3. Các trạng thái đầu ra</h2><table class="table"><thead><tr><th>Trạng thái</th><th>Ý nghĩa</th><th>Việc cần làm</th></tr></thead><tbody>
+<tr><td><span class="label">DRAFT</span></td><td>Đang soạn hoặc chứng cứ chưa đủ để xác nhận.</td><td>Đọc báo cáo, kiểm tra dữ liệu nguồn, bổ sung tài liệu còn thiếu.</td></tr>
+<tr><td><span class="label">READY WITH CONDITIONS</span></td><td>Có thể tiếp tục sau khi các điều kiện được liệt kê được xử lý.</td><td>Đóng từng điều kiện, lưu chứng cứ hỗ trợ và xin rà soát lại.</td></tr>
+<tr><td><span class="label">FINAL</span></td><td>Không được tự gán chỉ vì phần mềm chạy xong.</td><td>Chỉ dùng khi quy trình phê duyệt của tổ chức và người có trách nhiệm cho phép.</td></tr>
+</tbody></table></section>
+<section class="section"><h2>4. Giới hạn và lưu ý an toàn</h2><ul>
+<li><b>Trang hiện tại không phải cổng nhận hồ sơ:</b> chưa có nút upload, backend, cơ sở dữ liệu hồ sơ, OCR hoặc hệ thống đăng nhập người dùng.</li>
+<li><b>Danh mục GitHub tự động:</b> chỉ dò repository công khai theo tên/mô tả phù hợp; không tự đọc chứng từ nội bộ hoặc xử lý các file trong máy tính của bạn.</li>
+<li><b>GitHub Pages là trang tĩnh:</b> không dùng trang này làm nơi lưu chứng từ Hải quan, thông tin cá nhân hoặc thông tin thương mại nhạy cảm.</li>
+<li><b>Không đưa bí mật vào mã nguồn:</b> không commit mật khẩu, access token, khóa API, file .env hoặc link tải tài liệu riêng có quyền truy cập công khai.</li>
+<li><b>Phân quyền:</b> giao diện vai trò nếu có trong prototype không thay thế xác thực người dùng, kiểm soát truy cập và nhật ký an toàn phía máy chủ.</li>
+<li><b>Chất lượng pháp lý:</b> mọi phân loại HS, chính sách quản lý và Mẫu 01 cần đối chiếu hồ sơ gốc và quy định đang có hiệu lực; phần mềm không bảo đảm cơ quan Hải quan chấp nhận.</li>
+</ul><div class="warning"><b>Đề xuất trước khi dùng hồ sơ thật:</b> xây dựng mô-đun upload có backend riêng, xác thực người dùng, phân quyền theo dự án, lưu trữ riêng tư, mã hóa, giới hạn dung lượng, quy định lưu/xóa và nhật ký truy cập. Không dùng repository public như kho hồ sơ.</div></section>
+<section class="section todo"><h2>5. Checklist trước khi bắt đầu</h2><ul><li>Đã tách file theo từng lô hàng và giữ nguyên bản gốc.</li><li>Đã đối chiếu tên file với nội dung, đánh dấu tài liệu còn thiếu.</li><li>Đã loại bỏ dữ liệu nhạy cảm khỏi mọi ví dụ công khai.</li><li>Đã xác nhận môi trường dùng thử là riêng tư/an toàn trước khi tải hồ sơ thật.</li><li>Đã ghi rõ người chịu trách nhiệm duyệt kết quả cuối cùng.</li></ul></section>
+<div class="buttons"><a class="btn main" href="./">Về trang chủ danh mục</a><a class="btn" href="https://github.com/brokennguyenhp/KEN-XNX-CAD-Studio-V0.5.0" target="_blank" rel="noopener">Mở repository ↗</a><a class="btn" href="https://github.com/brokennguyenhp/KEN-XNX-CAD-Studio-V0.5.0/issues" target="_blank" rel="noopener">Ghi nhận yêu cầu tính năng ↗</a></div>
+</main>
+<footer>KEN XNX Project Hub · Hướng dẫn quy trình dự kiến. Tính năng upload/chạy phân tích chỉ được xem là khả dụng khi đã được triển khai và kiểm thử thực tế.</footer>
+</div></body></html>
