@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0a1020">
+<meta name="description" content="KEN XNX Project Hub — danh mục các dự án CAD Studio, công cụ kỹ thuật và workflow hồ sơ Hải quan trên GitHub.">
+<title>KEN XNX · Project Hub</title>
+<style>
+:root{--bg:#080d19;--panel:#111a2b;--panel2:#0e1727;--line:rgba(157,180,219,.16);--text:#f1f5ff;--muted:#99a8c2;--mint:#70f0c0;--blue:#7eb6ff;--violet:#b8a1ff;--gold:#ffc978;--radius:22px;--shadow:0 20px 70px rgba(0,0,0,.25)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 78% 0%,rgba(57,105,168,.18),transparent 35%),radial-gradient(ellipse at 10% 12%,rgba(91,77,170,.15),transparent 28%),var(--bg);color:var(--text);font:15px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:linear-gradient(rgba(151,178,221,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(151,178,221,.07) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent 78%);z-index:-1}
+a{color:inherit;text-decoration:none}button,input{font:inherit}.shell{width:min(1180px,calc(100% - 40px));margin:auto}.topbar{display:flex;align-items:center;justify-content:space-between;padding:23px 0 18px;border-bottom:1px solid var(--line);gap:18px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.04em}.logo{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;color:#061322;background:linear-gradient(135deg,var(--mint),var(--blue));box-shadow:0 8px 28px rgba(112,240,192,.18);font-weight:950;font-size:15px}.brand small{display:block;font-size:10px;line-height:1.3;color:var(--muted);font-weight:700;letter-spacing:.19em}.nav{display:flex;align-items:center;gap:22px;color:var(--muted);font-size:13px}.nav a:hover{color:var(--text)}.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:7px 12px;color:#c5d3ec;font-size:11px;font-weight:750;letter-spacing:.11em;text-transform:uppercase;background:rgba(16,26,44,.65)}.dot{height:7px;width:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 11px var(--mint)}
+.hero{display:grid;grid-template-columns:1.13fr .87fr;align-items:center;gap:45px;padding:72px 0 54px}.eyebrow{color:var(--mint);font-size:12px;letter-spacing:.2em;font-weight:800;text-transform:uppercase;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:25px;height:1px;background:var(--mint)}h1{font-size:clamp(42px,6vw,71px);letter-spacing:-.065em;line-height:1.02;margin:17px 0 22px;font-weight:850;max-width:700px}.gradient{background:linear-gradient(100deg,#f4f7ff 4%,#a5c9ff 40%,#76f0c2 90%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:17px;color:#a7b5cc;max-width:610px;line-height:1.8;margin:0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 17px;border-radius:13px;border:1px solid var(--line);font-weight:750;font-size:13px;transition:.2s}.btn.primary{background:var(--mint);color:#06151a;border-color:var(--mint)}.btn.secondary{background:rgba(255,255,255,.035);color:var(--text)}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.hero-art{position:relative;min-height:300px;border:1px solid var(--line);border-radius:27px;padding:24px;background:linear-gradient(145deg,rgba(24,39,64,.96),rgba(12,20,36,.93));overflow:hidden;box-shadow:var(--shadow)}.hero-art:before{content:"";position:absolute;width:270px;height:270px;border-radius:50%;background:rgba(93,133,255,.12);filter:blur(38px);right:-90px;top:-100px}.art-head{display:flex;justify-content:space-between;align-items:center;color:#a9b9d3;font-size:11px;letter-spacing:.12em;text-transform:uppercase}.art-badge{color:var(--mint);border:1px solid rgba(112,240,192,.28);padding:5px 9px;border-radius:7px;font-size:10px}.blueprint{position:relative;margin-top:25px;height:190px;border-radius:15px;border:1px solid rgba(126,182,255,.19);background-image:linear-gradient(rgba(126,182,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(126,182,255,.08) 1px,transparent 1px);background-size:20px 20px;overflow:hidden}.blueprint svg{width:100%;height:100%}.art-foot{display:flex;gap:18px;margin-top:17px}.art-stat{flex:1;border-left:2px solid rgba(112,240,192,.65);padding-left:10px}.art-stat strong{display:block;font-size:19px;letter-spacing:-.03em}.art-stat span{color:var(--muted);font-size:11px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:5px 0 56px}.stat{padding:17px 19px;border:1px solid var(--line);border-radius:16px;background:rgba(16,25,42,.68)}.stat strong{font-size:24px;letter-spacing:-.04em;display:block}.stat span{font-size:12px;color:var(--muted)}
+section{margin:0 0 61px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:23px}.kicker{color:var(--mint);font-size:11px;text-transform:uppercase;letter-spacing:.18em;font-weight:800}.section-head h2{font-size:clamp(24px,3vw,34px);letter-spacing:-.045em;margin:5px 0 0;line-height:1.2}.section-head p{color:var(--muted);margin:8px 0 0;font-size:13px}.small-link{color:var(--mint);font-size:12px;font-weight:750;white-space:nowrap}.featured{display:grid;grid-template-columns:1.25fr .75fr;gap:17px}.project-card{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(135deg,rgba(19,30,50,.92),rgba(12,20,35,.96));padding:25px;position:relative;overflow:hidden;box-shadow:0 12px 35px rgba(0,0,0,.12)}.project-card.main:after{content:"CAD";position:absolute;right:-10px;bottom:-48px;font-size:150px;font-weight:950;letter-spacing:-.12em;color:rgba(126,182,255,.055);pointer-events:none}.card-top{display:flex;justify-content:space-between;align-items:center;gap:14px;position:relative;z-index:1}.iconbox{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:rgba(112,240,192,.1);border:1px solid rgba(112,240,192,.24);color:var(--mint)}.status{font-size:10px;text-transform:uppercase;font-weight:800;letter-spacing:.11em;border:1px solid rgba(255,201,120,.26);color:var(--gold);border-radius:999px;padding:6px 9px}.project-card h3{font-size:23px;line-height:1.22;letter-spacing:-.04em;margin:20px 0 9px;position:relative;z-index:1}.project-card p{color:var(--muted);font-size:13px;line-height:1.75;margin:0;position:relative;z-index:1}.tags{display:flex;flex-wrap:wrap;gap:7px;margin:17px 0 21px;position:relative;z-index:1}.tag{border:1px solid var(--line);border-radius:8px;padding:5px 9px;color:#c2cee4;font-size:11px}.card-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;position:relative;z-index:1}.meta{color:#8596b3;font-size:11px}.open-link{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;color:var(--mint)}.side-feature{display:flex;flex-direction:column;justify-content:space-between;gap:22px}.mini-project{padding:19px;border:1px solid var(--line);border-radius:17px;background:rgba(13,22,38,.72)}.mini-project .line{display:flex;align-items:center;gap:12px}.mini-icon{width:37px;height:37px;display:grid;place-items:center;background:rgba(126,182,255,.11);color:var(--blue);border-radius:11px}.mini-project h3{font-size:14px;margin:0;letter-spacing:-.02em}.mini-project p{font-size:12px;margin:10px 0 0;color:var(--muted)}.roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.road-card{border:1px solid var(--line);border-radius:18px;padding:21px;background:rgba(14,23,39,.85)}.road-card .version{color:var(--mint);font-size:11px;font-weight:850;letter-spacing:.14em}.road-card h3{font-size:16px;margin:9px 0 8px}.road-card p{font-size:12px;line-height:1.75;color:var(--muted);margin:0}.road-card ul{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:7px}.road-card li{color:#c7d3e7;font-size:11px;display:flex;gap:8px}.road-card li:before{content:"↗";color:var(--mint)}
+.directory-toolbar{display:flex;align-items:center;gap:13px;flex-wrap:wrap;margin-bottom:17px}.search{flex:1;min-width:220px;position:relative}.search input{width:100%;background:#0e1727;color:var(--text);padding:12px 15px;border:1px solid var(--line);border-radius:12px;outline:none}.search input:focus{border-color:rgba(112,240,192,.5);box-shadow:0 0 0 3px rgba(112,240,192,.07)}.search input::placeholder{color:#71829e}.directory-note{font-size:11px;color:#889ab6}.repo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.repo-card{border:1px solid var(--line);border-radius:17px;padding:19px;background:rgba(14,23,39,.82);display:flex;flex-direction:column;min-height:208px;transition:.2s}.repo-card:hover{transform:translateY(-3px);border-color:rgba(112,240,192,.35);background:rgba(17,29,48,.96)}.repo-title{display:flex;gap:10px;align-items:flex-start}.repo-symbol{flex:0 0 34px;width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--line);border-radius:10px;color:var(--blue);font-weight:900}.repo-title h3{font-size:13px;line-height:1.45;margin:0;overflow-wrap:anywhere}.repo-title small{display:block;color:#7f92af;font-size:10px;margin-top:3px}.repo-desc{font-size:12px;color:var(--muted);line-height:1.65;margin:13px 0 16px;flex:1}.repo-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px solid var(--line);padding-top:12px;color:#8da0bd;font-size:10px}.language{display:flex;align-items:center;gap:6px}.lang-dot{width:7px;height:7px;border-radius:50%;background:var(--violet)}.empty{grid-column:1/-1;text-align:center;padding:42px 20px;border:1px dashed var(--line);border-radius:17px;color:var(--muted);font-size:13px}.loading{color:var(--muted);font-size:13px;padding:20px 0}.foot{border-top:1px solid var(--line);padding:26px 0 34px;display:flex;justify-content:space-between;align-items:center;gap:18px;color:#7889a5;font-size:11px}.foot strong{color:#b9c8df}.foot-links{display:flex;gap:18px}.foot a:hover{color:var(--mint)}
+@media(max-width:850px){.hero{grid-template-columns:1fr;gap:25px;padding-top:48px}.hero-art{min-height:260px}.featured{grid-template-columns:1fr}.side-feature{display:grid;grid-template-columns:1fr 1fr}.repo-grid{grid-template-columns:repeat(2,1fr)}.roadmap{grid-template-columns:1fr}.nav{gap:12px}.nav a:nth-child(2){display:none}}
+@media(max-width:560px){.shell{width:min(100% - 26px,1180px)}.topbar{align-items:flex-start}.nav a{display:none}.nav .pill{font-size:9px;padding:7px 9px}.hero{padding:43px 0 36px}h1{font-size:44px}.hero p{font-size:15px}.stats{grid-template-columns:repeat(2,1fr);gap:9px;margin-bottom:45px}.stat{padding:14px}.stat strong{font-size:21px}.section-head{align-items:flex-start;flex-direction:column}.side-feature{grid-template-columns:1fr}.repo-grid{grid-template-columns:1fr}.project-card{padding:21px}.foot{align-items:flex-start;flex-direction:column}.blueprint{height:175px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="KEN XNX Project Hub trang chủ">
+    <span class="logo">KX</span><span>KEN XNX<small>PROJECT HUB · ENGINEERING TOOLS</small></span>
+  </a>
+  <nav class="nav" aria-label="Điều hướng chính">
+    <a href="#featured">Dự án nổi bật</a><a href="#roadmap">Lộ trình</a><a href="#directory">Danh mục GitHub</a>
+    <span class="pill"><span class="dot"></span> Live directory</span>
+  </nav>
+</header>
+<main id="top">
+<section class="hero">
+  <div>
+    <div class="eyebrow">Engineering · CAD · Customs workflow</div>
+    <h1>Một nơi cho mọi dự án <span class="gradient">KEN XNX.</span></h1>
+    <p>Trung tâm danh mục dự án kỹ thuật — từ dựng sơ đồ CAD dây chuyền, quản lý chứng từ đến chuẩn bị hồ sơ Hải quan. Các repository công khai liên quan trên GitHub sẽ tự xuất hiện trong danh mục bên dưới.</p>
+    <div class="actions">
+      <a class="btn primary" href="#directory">Khám phá dự án <span aria-hidden="true">↘</span></a>
+      <a class="btn secondary" href="https://github.com/brokennguyenhp" target="_blank" rel="noopener">Mở GitHub cá nhân <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <aside class="hero-art" aria-label="Minh họa sơ đồ CAD công nghiệp">
+    <div class="art-head"><span>CAD Studio / layout preview</span><span class="art-badge">SYSTEM · 0.5.0</span></div>
+    <div class="blueprint">
+      <svg viewBox="0 0 420 190" role="img" aria-label="Sơ đồ minh họa các thiết bị nối với nhau">
+        <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#70f0c0"/><stop offset="1" stop-color="#7eb6ff"/></linearGradient></defs>
+        <g fill="none" stroke="url(#g)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M66 73 H143 M188 73 H250 M294 73 H352" stroke-dasharray="5 5"/>
+          <path d="M143 73 l-8 -5 m8 5 l-8 5 M250 73 l-8 -5 m8 5 l-8 5 M352 73 l-8 -5 m8 5 l-8 5"/>
+          <rect x="22" y="48" width="44" height="50" rx="6" fill="rgba(112,240,192,.08)"/>
+          <path d="M31 60 H57 M31 68 H57 M31 76 H57 M31 84 H48"/>
+          <rect x="143" y="48" width="45" height="50" rx="6" fill="rgba(126,182,255,.08)"/>
+          <circle cx="165.5" cy="66" r="8"/><path d="M157 82 H174 M157 88 H174"/>
+          <rect x="250" y="48" width="44" height="50" rx="6" fill="rgba(184,161,255,.08)"/>
+          <path d="M260 85 V60 H284 V85 Z M266 65 V80 M272 65 V80 M278 65 V80"/>
+          <rect x="352" y="48" width="44" height="50" rx="6" fill="rgba(112,240,192,.08)"/>
+          <path d="M360 60 H388 V86 H360 Z M366 68 H382 M366 75 H382"/>
+          <path d="M44 98 V132 H165 V98 M165 98 V151 H272 V98 M272 98 V132 H374 V98" stroke-opacity=".42" stroke-dasharray="3 5"/>
+          <circle cx="44" cy="132" r="4" fill="#70f0c0"/><circle cx="165" cy="151" r="4" fill="#7eb6ff"/><circle cx="272" cy="132" r="4" fill="#b8a1ff"/><circle cx="374" cy="132" r="4" fill="#70f0c0"/>
+        </g>
+        <g fill="#a7b8d4" font-size="9" font-family="ui-monospace,monospace"><text x="22" y="38">01 · INPUT</text><text x="143" y="38">02 · PROCESS</text><text x="250" y="38">03 · CONTROL</text><text x="352" y="38">04 · OUTPUT</text><text x="22" y="173">FLOW PATH / CONNECTIONS / EVIDENCE</text></g>
+      </svg>
+    </div>
+    <div class="art-foot"><div class="art-stat"><strong>CAD</strong><span>Layout & flow</span></div><div class="art-stat"><strong>DOCS</strong><span>Evidence links</span></div><div class="art-stat"><strong>QA</strong><span>Draft-first review</span></div></div>
+  </aside>
+</section>
+<div class="stats" aria-label="Tóm tắt dự án">
+  <div class="stat"><strong id="statProjects">01+</strong><span>Dự án nổi bật</span></div>
+  <div class="stat"><strong>V0.2 → V0.5</strong><span>Lộ trình CAD Studio</span></div>
+  <div class="stat"><strong>GitHub</strong><span>Quản lý mã nguồn</span></div>
+  <div class="stat"><strong>Draft-first</strong><span>Không tự chốt hồ sơ thiếu căn cứ</span></div>
+</div>
+<section id="featured">
+  <div class="section-head"><div><div class="kicker">Featured project</div><h2>Dự án trọng tâm</h2><p>Nền tảng CAD và chuẩn bị hồ sơ Hải quan KEN XNX.</p></div><a class="small-link" href="https://github.com/brokennguyenhp" target="_blank" rel="noopener">Tất cả repo trên GitHub ↗</a></div>
+  <div class="featured">
+    <article class="project-card main">
+      <div class="card-top"><div class="iconbox" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h4v4H7zM14 8h3M14 11h3M7 16h10"/></svg></div><span class="status">Prototype · V0.5.0</span></div>
+      <h3>KEN XNX CAD Studio V0.5.0</h3>
+      <p>Công cụ hướng tới dựng sơ đồ máy và băng tải, quản lý hồ sơ chứng từ theo thiết bị, tạo báo cáo phân tích KEN XNX và mẫu đăng ký danh mục ở trạng thái DRAFT / READY WITH CONDITIONS.</p>
+      <div class="tags"><span class="tag">Interactive CAD</span><span class="tag">Evidence registry</span><span class="tag">Customs workflow</span><span class="tag">GitHub Actions</span></div>
+      <div class="card-bottom"><span class="meta">Repository · Public</span><a class="open-link" href="https://github.com/brokennguyenhp/KEN-XNX-CAD-Studio-V0.5.0" target="_blank" rel="noopener">Mở repository <span aria-hidden="true">↗</span></a></div>
+    </article>
+    <div class="side-feature">
+      <article class="mini-project"><div class="line"><span class="mini-icon" aria-hidden="true">⌘</span><h3>Thiết kế theo chứng cứ</h3></div><p>Liên kết thiết bị với Catalogue, Invoice, Packing List, bản vẽ và tài liệu kỹ thuật; dữ liệu thiếu phải được đánh dấu rõ.</p></article>
+      <article class="mini-project"><div class="line"><span class="mini-icon" aria-hidden="true">⇧</span><h3>Xuất hồ sơ có kiểm soát</h3></div><p>Phân biệt bản nháp với hồ sơ sẵn sàng có điều kiện; không xem bản xuất tự động là kết luận Hải quan cuối cùng.</p></article>
+    </div>
+  </div>
+</section>
+<section id="roadmap">
+  <div class="section-head"><div><div class="kicker">Product roadmap</div><h2>Lộ trình phát triển</h2><p>Các mốc phát triển cốt lõi của KEN XNX CAD Studio.</p></div></div>
+  <div class="roadmap">
+    <article class="road-card"><div class="version">V0.2 — CAD INTERACTIVE</div><h3>Dựng sơ đồ trực quan</h3><p>Biến sơ đồ dây chuyền thành bố trí có thể thao tác và hiệu chỉnh.</p><ul><li>Kéo thả thiết bị</li><li>Nối điểm đầu/cuối băng tải</li><li>Chỉnh vị trí và xuất bản vẽ</li></ul></article>
+    <article class="road-card"><div class="version">V0.3 — DOCUMENT EVIDENCE</div><h3>Đọc và liên kết hồ sơ</h3><p>Quản lý nguồn chứng cứ theo từng máy, cụm máy hoặc thiết bị.</p><ul><li>Catalogue, Invoice, Packing List</li><li>Bản vẽ và tài liệu kỹ thuật</li><li>Liên kết chứng cứ với từng thiết bị</li></ul></article>
+    <article class="road-card"><div class="version">V0.4 — CUSTOMS EXPORT</div><h3>Xuất hồ sơ Hải quan</h3><p>Chuẩn bị đầu ra có kiểm soát, không tự chốt khi hồ sơ còn thiếu hoặc mâu thuẫn.</p><ul><li>Báo cáo phân tích KEN XNX</li><li>Mẫu 01 — DRAFT</li><li>READY WITH CONDITIONS khi đủ điều kiện</li></ul></article>
+  </div>
+</section>
+<section id="directory">
+  <div class="section-head"><div><div class="kicker">GitHub repository index</div><h2>Danh mục dự án</h2><p>Tự dò các repository công khai của tài khoản có tên hoặc mô tả liên quan đến KEN XNX / CAD Studio.</p></div><a class="small-link" href="https://github.com/brokennguyenhp?tab=repositories" target="_blank" rel="noopener">Xem trên GitHub ↗</a></div>
+  <div class="directory-toolbar"><label class="search"><input id="search" type="search" placeholder="Tìm dự án theo tên hoặc mô tả…" aria-label="Tìm dự án theo tên hoặc mô tả"></label><span class="directory-note" id="directoryStatus" aria-live="polite">Đang tải repository công khai…</span></div>
+  <div class="repo-grid" id="repoGrid"><div class="loading">Đang kết nối GitHub để tải danh mục…</div></div>
+</section>
+</main>
+<footer class="foot"><div><strong>KEN XNX · PROJECT HUB</strong><br>Danh mục dự án kỹ thuật và công cụ quy trình.</div><div class="foot-links"><a href="https://github.com/brokennguyenhp" target="_blank" rel="noopener">GitHub profile ↗</a><a href="#top">Lên đầu trang ↑</a></div></footer>
+</div>
+<script>
+(function(){
+'use strict';
+var username='brokennguyenhp';
+var current={name:'KEN-XNX-CAD-Studio-V0.5.0',full_name:'brokennguyenhp/KEN-XNX-CAD-Studio-V0.5.0',html_url:'https://github.com/brokennguyenhp/KEN-XNX-CAD-Studio-V0.5.0',description:'Công cụ CAD tương tác, quản lý chứng từ và chuẩn bị hồ sơ Hải quan KEN XNX.',language:'HTML',updated_at:'2026-10-09T00:00:00Z',stargazers_count:0};
+var projects=[current], query='';
+var grid=document.getElementById('repoGrid'), status=document.getElementById('directoryStatus'), search=document.getElementById('search');
+function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function related(r){var s=((r.name||'')+' '+(r.description||'')+' '+((r.topics||[]).join(' '))).toLowerCase();return /ken[\s_-]*xnx|cad[\s_-]*studio|xnx[\s_-]*cad/.test(s);}
+function when(s){if(!s)return 'GitHub repository';var d=new Date(s);if(isNaN(d.getTime()))return 'GitHub repository';return 'Cập nhật '+d.toLocaleDateString('vi-VN',{year:'numeric',month:'short',day:'numeric'});}
+function render(){
+ var filtered=projects.filter(function(r){return ((r.name||'')+' '+(r.description||'')+' '+(r.language||'')).toLowerCase().indexOf(query.toLowerCase())>=0;});
+ document.getElementById('statProjects').textContent=String(Math.max(1,projects.length)).padStart(2,'0')+(projects.length===1?'+':'');
+ if(!filtered.length){grid.innerHTML='<div class="empty">Không tìm thấy dự án khớp với từ khóa. Thử tìm tên khác hoặc mở GitHub profile.</div>';return;}
+ grid.innerHTML=filtered.map(function(r){
+  var desc=r.description||'Chưa có mô tả. Mở repository để xem mã nguồn và tài liệu.';
+  return '<article class="repo-card"><div class="repo-title"><span class="repo-symbol" aria-hidden="true">↗</span><div><h3>'+esc(r.name)+'</h3><small>'+esc(r.full_name||username+'/'+r.name)+'</small></div></div><p class="repo-desc">'+esc(desc)+'</p><div class="repo-foot"><span class="language"><i class="lang-dot"></i>'+esc(r.language||'Project')+'</span><span>'+esc(when(r.updated_at))+'</span></div><div style="margin-top:12px"><a class="open-link" href="'+esc(r.html_url||'#')+'" target="_blank" rel="noopener">Xem dự án ↗</a></div></article>';
+ }).join('');
+}
+search.addEventListener('input',function(){query=search.value.trim();render();});
+fetch('https://api.github.com/users/'+username+'/repos?per_page=100&sort=updated&type=public',{headers:{'Accept':'application/vnd.github+json'}})
+.then(function(res){if(!res.ok)throw new Error('GitHub API '+res.status);return res.json();})
+.then(function(rows){
+ var found=(Array.isArray(rows)?rows:[]).filter(related);
+ var map={};[current].concat(found).forEach(function(r){map[r.full_name||r.name]=r;});
+ projects=Object.keys(map).map(function(k){return map[k];}).sort(function(a,b){if(a.full_name===current.full_name)return -1;if(b.full_name===current.full_name)return 1;return new Date(b.updated_at||0)-new Date(a.updated_at||0);});
+ status.textContent='Tìm thấy '+projects.length+' dự án liên quan · Đồng bộ khi tải lại trang';
+ render();
+})
+.catch(function(){projects=[current];status.textContent='Không tải được danh mục động · Đang hiển thị dự án trọng tâm';render();});
+})();
+</script>
+</body>
+</html>
