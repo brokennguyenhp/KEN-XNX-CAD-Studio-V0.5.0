@@ -1,0 +1,29 @@
+
+/* KEN XNX background image integration
+   Place ken-xnx-background.webp in the same repository folder as studio.html
+   or adjust the relative path below if you use an assets/ folder. */
+body {
+  background-color: #07152b;
+  background-image:
+    linear-gradient(rgba(5, 17, 39, 0.68), rgba(5, 17, 39, 0.82)),
+    url("./ken-xnx-background.webp");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.side,
+.panel {
+  background: linear-gradient(
+    145deg,
+    rgba(12, 31, 57, 0.94),
+    rgba(7, 21, 42, 0.94)
+  );
+  backdrop-filter: blur(5px);
+}
+@media (max-width: 700px) {
+  body {
+    background-attachment: scroll;
+    background-position: center top;
+  }
+}
